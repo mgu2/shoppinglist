@@ -12,6 +12,7 @@ import { RecipeDetailComponent } from "./recipes/recipe-detail/recipe-detail.com
 import { RecipeItemComponent } from "./recipes/recipe-list/recipe-item.component";
 import { ShoppingListService } from "./shopping-list/shopping-list.service";
 import { RecipeService } from "./recipes/recipe.service";
+import { routing } from "./app.routing";
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { RecipeService } from "./recipes/recipe.service";
     RecipeItemComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing
   ],
   providers: [ShoppingListService, RecipeService],
   bootstrap: [RecipeBookAppComponent]
